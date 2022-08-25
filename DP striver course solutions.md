@@ -1,5 +1,5 @@
 [1. Climbing Stairs](https://leetcode.com/problems/climbing-stairs/discuss/2473516/From-recursion-to-space-optimized-DP-with-gradual-changes-for-better-understanding)  
-[2. Min cost climbing stairs](https://leetcode.com/problems/min-cost-climbing-stairs/discuss/2473893/from-recursion-to-memoized-with-gradual-changes-for-better-understanding)
+[2. Min cost climbing stairs](https://leetcode.com/problems/min-cost-climbing-stairs/discuss/2473893/from-recursion-to-memoized-with-gradual-changes-for-better-understanding)  
 [3. House Robber](https://leetcode.com/problems/house-robber/discuss/2476337/From-recursion-to-space-optimized-DP-with-gradual-changes-for-better-understanding)
 []()
 []()
