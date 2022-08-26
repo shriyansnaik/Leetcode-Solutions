@@ -5,7 +5,7 @@
 [5. Unique Path](https://leetcode.com/problems/unique-paths/discuss/2478400/from-recursion-to-space-optimized-dp-with-gradual-changes-for-better-understanding)  
 [6. Unique Path 2](https://leetcode.com/problems/unique-paths-ii/discuss/2482569/from-recursion-to-space-optimized-dp-with-gradual-changes-for-better-understanding)  
 [7. Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/discuss/2482913/From-recursion-to-space-optimized-DP-with-gradual-changes-for-better-understanding)  
-[]()
+[8. Triangle](https://leetcode.com/problems/triangle/discuss/2483471/From-recursion-to-space-optimized-DP-with-gradual-changes-for-better-understanding)  
 []()
 []()
 []()
