@@ -82,8 +82,8 @@ def subsetSumToK(n, target, arr):
     for i in range(n): dp[i][0] = True
     if arr[0] <= target: dp[0][arr[0]] = True
     
-    for i in range(n):
-        for cur_sum in range(target + 1):
+    for i in range(1,n):
+        for cur_sum in range(1,target + 1):
         
             take = False
             if cur_sum >= arr[i]: take = dp[i - 1][cur_sum - arr[i]]
