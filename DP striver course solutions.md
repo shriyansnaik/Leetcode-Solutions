@@ -9,5 +9,5 @@
 [9. Minimum falling path](https://leetcode.com/problems/minimum-falling-path-sum/discuss/2484727/From-recursion-to-space-optimized-DP-with-gradual-changes-for-better-understanding)  
 [10. Cherry Pickup](https://leetcode.com/problems/cherry-pickup/discuss/2489246/4D-greater-3D.-From-recursion-to-memoization-with-gradual-changes-for-better-understanding)  
 [11. Subset Sum Equals K](https://github.com/glacias07/Leetcode-Solutions/blob/main/Non_leetcode_questions/Subset_Sum.md)  
-[]()
+[12. Partition a set into two subsets such that the difference of subset sums is minimum](https://github.com/glacias07/Leetcode-Solutions/blob/main/Non_leetcode_questions/Partition_a_set_into_two_subsets_such_that_the_difference_of_subset_sums_is_minimum.md)  
 []()
