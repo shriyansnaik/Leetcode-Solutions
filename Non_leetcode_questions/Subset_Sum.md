@@ -73,3 +73,51 @@ def subsetSumToK(n, target, arr):
 **TC: O(MxN)
 SC: O(M+N) + O(MxN) for recursive stack and 2D dp array**
 
+**Tabulation (Bottom-up)**
+```
+def subsetSumToK(n, target, arr):
+    
+    dp = [[False]*(target + 1) for _ in range(n)]
+    
+    for i in range(n): dp[i][0] = True
+    if arr[0] <= target: dp[0][arr[0]] = True
+    
+    for i in range(n):
+        for cur_sum in range(target + 1):
+        
+            take = False
+            if cur_sum >= arr[i]: take = dp[i - 1][cur_sum - arr[i]]
+            not_take = dp[i - 1][cur_sum]
+
+            dp[i][cur_sum] = take or not_take
+            
+    return dp[n - 1][target]
+```
+
+**TC: O(MxN)
+SC: O(MxN) for 2D dp array**
+
+
+**Space optimized (Bottom-Up)**
+```
+def subsetSumToK(n, k, arr):
+    
+    prev = [False]*(k + 1)
+    cur = [False]*(k + 1)
+    prev[0] = cur[0] = True
+    
+    if arr[0] <= k: prev[arr[0]] = True
+    
+    for i in range(1,n):
+        for target in range(1, k + 1):
+            take = False
+            if target >= arr[i]: take = prev[target - arr[i]]
+            not_take = prev[target]
+
+            cur[target] = take or not_take
+        prev = cur[:]
+        
+    return cur[k]
+```
+**TC: O(MxN)
+SC: O(N) for 1D dp array**
