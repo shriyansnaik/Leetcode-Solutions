@@ -65,12 +65,12 @@ def cutRod(self, price, n):
 **Tabulation**
 ```
 def cutRod(self, price, n):
-  dp = [[-1]*(n + 1) for _ in range(n)]
+  dp = [[0]*(n + 1) for _ in range(n)]
 
   for left in range(n + 1):
       dp[0][left] = left*price[0]
 
-  for i in range(n):
+  for i in range(1,n):
       for left in range(n + 1):
           take = 0
           if left >= i + 1: take = price[i] + dp[i][left - (i + 1)]
@@ -85,13 +85,13 @@ def cutRod(self, price, n):
 **Space optimized**
 ```
 def cutRod(self, price, n):
-  prev = [-1]*(n + 1)
-  cur = [-1]*(n + 1)
+  prev = [0]*(n + 1)
+  cur = [0]*(n + 1)
 
   for left in range(n + 1):
       prev[left] = left*price[0]
 
-  for i in range(n):
+  for i in range(1,n):
       for left in range(n + 1):
           take = 0
           if left >= i + 1: take = price[i] + cur[left - (i + 1)]
@@ -108,12 +108,12 @@ def cutRod(self, price, n):
 **Even more space optimized**
 ```
 def cutRod(self, price, n):
-  prev = [-1]*(n + 1)
+  prev = [0]*(n + 1)
 
   for left in range(n + 1):
       prev[left] = left*price[0]
 
-  for i in range(n):
+  for i in range(1,n):
       for left in range(n + 1):
           take = 0
           if left >= i + 1: take = price[i] + prev[left - (i + 1)]
