@@ -21,8 +21,8 @@ def minSubsetSumDifference(arr, n):
     total = sum(arr)
     dp = subsetSumToK(n, total, arr)
     mini = float("inf")
-    for i in range(len(dp)//2 + 1):
-        if dp[i]: mini = min(mini, abs(2*i - total))
+    for cur_sum in range(len(dp)//2 + 1):
+        if dp[cur_sum]: mini = min(mini, abs(2*cur_sum - total))
         
     return mini
 ```    
